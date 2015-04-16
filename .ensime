@@ -1,0 +1,43 @@
+;; If your project contains a lot of files, it is advisable to enable (:disable-source-load-on-startup t)
+;; Otherwise Ensime might incur a massive lag at startup time
+;; See more information about that at http://aemoncannon.github.com/ensime/index.html
+
+(
+  :subprojects (
+    (
+      :name "functional-programming-in-scala"
+      :module-name "functional-programming-in-scala"
+      :depends-on-modules (
+      
+      )
+      :package "default"
+      :version "1.0"
+      :compile-deps (
+        "/Users/shohei/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.5.jar"
+      )
+      :runtime-deps (
+        "/Users/shohei/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.5.jar"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/classes"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/classes"
+      )
+      :test-deps (
+        "/Users/shohei/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.5.jar"
+        "/Users/shohei/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar"
+        "/Users/shohei/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar"
+        "/Users/shohei/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/classes"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/test-classes"
+      )
+      :source-roots (
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/src/main/scala"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/src/main/java"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/src_managed/main"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/src/test/scala"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/src/test/java"
+        "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/src_managed/test"
+      )
+      :target "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/classes"
+      :test-target "/Users/shohei/Documents/Scala/Learning/functional-programming-in-scala/target/scala-2.11/test-classes"
+    )
+  )
+)
