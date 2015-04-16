@@ -168,6 +168,22 @@ object List {
         }
     }
 
+    // ex 3.24 (Hard)
+    def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = {
+        def check(xs: List[A], ys: List[A]): Boolean = (xs, ys) match {
+            case (Nil, _) => false
+            case (_, Nil) => true
+            case (Cons(h1 ,t1), Cons(h2, t2)) => (h1 == h2) && check(t1, t2)
+        }
+
+        if (check(sup, sub)) true
+        else sup match {
+            case Cons(h, t) => hasSubsequence(t, sub)
+            case Nil => false
+        }
+
+    }
+
 
 
 }
