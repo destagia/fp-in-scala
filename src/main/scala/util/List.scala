@@ -176,12 +176,10 @@ object List {
             case (Cons(h1 ,t1), Cons(h2, t2)) => (h1 == h2) && check(t1, t2)
         }
 
-        if (check(sup, sub)) true
-        else sup match {
-            case Cons(h, t) => hasSubsequence(t, sub)
+        sup match {
             case Nil => false
+            case Cons(h ,t) => check(sup, sub) || hasSubsequence(t, sub)
         }
-
     }
 
 

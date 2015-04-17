@@ -37,7 +37,8 @@ object Main3 extends App {
     println("flatMap : " + flatMap(D.List(1,2,3,4))(i => D.List(i, i)))
     println("filter via flatMap : " + filterflat(D.List(1,2,3,4,5,6))(_ % 2 == 0) )
     println("addList : " + addList(D.List(1,2,3), D.List(4,5,6)))
-    println("addList : " + zipWith(D.List(1,2,3), D.List(4,5,6))((x, y) => (x, y)))
+    println("zipWith : " + zipWith(D.List(1,2,3), D.List(4,5,6))((x, y) => (x, y)))
+    println("hasSubsequence : " + hasSubsequence(D.List(1,2,3,4,5,6,7), D.List(1,2)) )
 
     // ex 3.7
     /*
